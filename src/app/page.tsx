@@ -28,19 +28,14 @@ export default function Landing() {
         <div>
           <motion.span variants={rise} className="pill pill-gold font-bold tracking-wider">DUBAI · 1–3 MARCH 2027</motion.span>
           <motion.h1 variants={rise} className="text-5xl md:text-6xl font-extrabold leading-[1.05] mt-4 tracking-tight">
-            Where <span className="text-grad">AI leaders</span> meet.
+            Share ideas. <span className="text-grad">Vote</span> on what we build.
           </motion.h1>
           <motion.p variants={rise} className="text-mute mt-4 max-w-md">
-            Three days of keynotes, workshops and conversations. Build your personal schedule and meet the people shaping what&apos;s next.
+            We are building something for the Dubai Expo AI Summit, and we have not picked the idea yet. This app is where the team proposes ideas, explains them, and votes. The most voted ideas get built.
           </motion.p>
           <motion.div variants={rise} className="flex gap-3 mt-7 max-w-sm">
             <Link href="/signup" className="btn">Create account</Link>
             <Link href="/signin" className="btn btn-ghost">Sign in</Link>
-          </motion.div>
-          <motion.div variants={rise} className="grid grid-cols-3 gap-3 mt-8 max-w-sm">
-            {[["3", "days"], ["120", "speakers"], ["40", "sessions"]].map(([n, l]) => (
-              <Card key={l} className="p-3 text-center"><b className="text-xl block">{n}</b><span className="text-xs text-mute">{l}</span></Card>
-            ))}
           </motion.div>
         </div>
 

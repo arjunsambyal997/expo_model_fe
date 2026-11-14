@@ -4,12 +4,10 @@ export type User = {
   id: number; email: string; name: string; role: string; organization: string;
   job_title: string; bio: string; interests: string; is_verified: boolean;
 };
-export type Speaker = { id: number; name: string; title: string; company: string; bio: string; featured: boolean };
-export type Talk = {
-  id: number; title: string; description: string; track: string; room: string; day: number;
-  starts_at: string; ends_at: string; speakers: Speaker[]; saved: boolean;
+export type Idea = {
+  id: number; title: string; description: string; author_name: string;
+  created_at: string; votes: number; voted: boolean;
 };
-export type SpeakerDetail = Speaker & { talks: Talk[] };
 
 export class ApiError extends Error {
   constructor(public status: number, message: string) { super(message); }
