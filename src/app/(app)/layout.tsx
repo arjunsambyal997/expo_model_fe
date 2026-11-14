@@ -9,8 +9,7 @@ import { Avatar } from "@/components/ui";
 
 const tabs = [
   { href: "/dashboard", label: "Home", icon: "⌂" },
-  { href: "/agenda", label: "Agenda", icon: "▦" },
-  { href: "/speakers", label: "Speakers", icon: "☻" },
+  { href: "/ideas", label: "Ideas", icon: "✦" },
   { href: "/profile", label: "Profile", icon: "●" },
 ];
 
@@ -28,7 +27,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     );
   }
   const items = ["admin", "organizer"].includes(user.role) ? [...tabs, { href: "/admin", label: "Admin", icon: "★" }] : tabs;
-  const active = (h: string) => path === h || (h === "/agenda" && path.startsWith("/sessions"));
+  const active = (h: string) => path === h;
 
   return (
     <div className="min-h-screen pb-24 md:pb-8">

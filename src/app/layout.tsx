@@ -5,7 +5,7 @@ import Background from "@/components/Background";
 
 export const metadata: Metadata = {
   title: "Expo AI Summit",
-  description: "Dubai Expo AI Summit: agenda, speakers and your personal schedule.",
+  description: "Dubai Expo AI Summit: share ideas and vote on what we build.",
 };
 export const viewport: Viewport = { themeColor: "#070b1a" };
 
