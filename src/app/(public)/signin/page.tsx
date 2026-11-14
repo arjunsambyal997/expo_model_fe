@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useAuth } from "@/lib/auth";
 import Logo from "@/components/Logo";
+import { FloatingOrbs, StaggerIn } from "@/components/AnimeIn";
 import { Button, Field, Notice, useForm } from "@/components/ui";
 
 export default function SignIn() {
@@ -17,10 +18,13 @@ export default function SignIn() {
   ];
   const f = useForm(async () => { await signIn(email, password); router.push("/dashboard"); });
   return (
-    <div className="glass p-7 w-full max-w-md">
+    <>
+    <FloatingOrbs />
+    <div className="glass p-7 w-full max-w-md relative">
+      <StaggerIn>
       <Logo />
       <h1 className="text-2xl font-bold mt-5">Welcome back</h1>
-      <p className="text-mute text-sm mb-5">Sign in to share ideas and vote on what we build for the summit.</p>
+      <p className="text-mute text-sm mb-5">Sign in to share your ideas and vote on what we build next.</p>
       <div className="rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 mb-4 text-sm">
         <div className="font-semibold text-gold mb-1">Demo logins</div>
         {demos.map((d) => (
@@ -40,6 +44,8 @@ export default function SignIn() {
         <Button type="submit" loading={f.loading}>Sign in</Button>
       </form>
       <p className="text-sm text-mute text-center mt-4">New here? <Link className="link" href="/signup">Create account</Link></p>
+      </StaggerIn>
     </div>
+    </>
   );
 }

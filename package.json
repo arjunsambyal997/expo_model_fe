@@ -1,5 +1,5 @@
 {
-  "name": "expo-summit-web",
+  "name": "idea-board-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "animejs": "^4.5.0",
     "framer-motion": "^14.12.0",
     "next": "^16.4.6",
     "react": "^19.3.1",

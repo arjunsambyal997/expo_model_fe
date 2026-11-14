@@ -7,7 +7,7 @@ export default function Logo() {
     <Link href="/" className="inline-flex items-center gap-2 font-bold text-lg">
       <motion.span animate={{ rotate: [0, 90, 180, 270, 360] }} transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
         className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet to-cyan inline-block" />
-      Expo AI Summit
+      Idea Board
     </Link>
   );
 }

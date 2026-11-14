@@ -4,8 +4,8 @@ import { AuthProvider } from "@/lib/auth";
 import Background from "@/components/Background";
 
 export const metadata: Metadata = {
-  title: "Expo AI Summit",
-  description: "Dubai Expo AI Summit: share ideas and vote on what we build.",
+  title: "Idea Board",
+  description: "Share ideas, explain them and vote on what we build next.",
 };
 export const viewport: Viewport = { themeColor: "#070b1a" };
 

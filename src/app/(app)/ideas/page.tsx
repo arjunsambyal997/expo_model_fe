@@ -29,7 +29,7 @@ export default function Ideas() {
       <motion.div variants={rise} className="mb-5">
         <h1 className="text-3xl font-extrabold">Ideas</h1>
         <p className="text-mute text-sm mt-1 max-w-xl">
-          Propose what we should build for the Dubai Expo AI Summit and vote for the ideas you like. The most voted ideas are the ones the team will pick up next.
+          Propose what we should build and vote for the ideas you like. The most voted ideas are the ones the team will pick up next.
         </p>
       </motion.div>
 

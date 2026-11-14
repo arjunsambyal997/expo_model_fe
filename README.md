@@ -1,8 +1,8 @@
-# Expo AI Summit Web
+# Idea Board Web
 
-Next.js (App Router, TypeScript) + Tailwind CSS v4 + Framer Motion frontend for the Dubai Expo AI Summit app.
+Next.js (App Router, TypeScript) + Tailwind CSS v4 + Framer Motion + anime.js frontend for the Idea Board app.
 
-The app lets the team propose ideas for the summit, explain them, and vote so the best ones get built.
+The app lets the team propose ideas, explain them, and vote so the best ones get built.
 
 ## Screens
 Landing, sign up, email verification, sign in (with demo logins shown), forgot/reset password, dashboard, ideas (create and vote), profile, settings, and an admin users page.

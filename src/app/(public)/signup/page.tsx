@@ -18,7 +18,7 @@ export default function SignUp() {
     <div className="glass p-7 w-full max-w-md">
       <Logo />
       <h1 className="text-2xl font-bold mt-5">Create your account</h1>
-      <p className="text-mute text-sm mb-5">Join the summit in under a minute.</p>
+      <p className="text-mute text-sm mb-5">Join in under a minute and start sharing ideas.</p>
       {f.error && <Notice kind="error">{f.error}</Notice>}
       {f.ok && (
         <Notice kind="ok">

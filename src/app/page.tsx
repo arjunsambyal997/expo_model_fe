@@ -26,12 +26,12 @@ export default function Landing() {
 
       <motion.section variants={stagger} initial="hidden" animate="show" className="grid md:grid-cols-2 gap-10 items-center flex-1 py-12">
         <div>
-          <motion.span variants={rise} className="pill pill-gold font-bold tracking-wider">DUBAI · 1–3 MARCH 2027</motion.span>
+          <motion.span variants={rise} className="pill pill-gold font-bold tracking-wider">IDEAS · VOTING</motion.span>
           <motion.h1 variants={rise} className="text-5xl md:text-6xl font-extrabold leading-[1.05] mt-4 tracking-tight">
             Share ideas. <span className="text-grad">Vote</span> on what we build.
           </motion.h1>
           <motion.p variants={rise} className="text-mute mt-4 max-w-md">
-            We are building something for the Dubai Expo AI Summit, and we have not picked the idea yet. This app is where the team proposes ideas, explains them, and votes. The most voted ideas get built.
+            We have not picked what to build yet. This is where the team proposes ideas, explains them, and votes. The most voted ideas get built.
           </motion.p>
           <motion.div variants={rise} className="flex gap-3 mt-7 max-w-sm">
             <Link href="/signup" className="btn">Create account</Link>

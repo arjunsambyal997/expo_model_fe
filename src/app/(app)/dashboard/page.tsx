@@ -24,7 +24,7 @@ export default function Dashboard() {
       <motion.div variants={rise} className="rounded-3xl p-6 mb-5 border border-white/15"
         style={{ background: "linear-gradient(135deg,rgba(122,108,255,.4),rgba(77,224,208,.22))" }}>
         <span className="pill pill-gold">What this app is for</span>
-        <h2 className="text-2xl font-bold mt-3 max-w-lg">Pick what we build for the Dubai Expo AI Summit</h2>
+        <h2 className="text-2xl font-bold mt-3 max-w-lg">Pick what we build next</h2>
         <p className="text-mute text-sm mt-2 max-w-lg">
           We have not decided what to build yet. Add your idea with a clear explanation, vote on the ones you like, and the team will work on the top ideas next.
         </p>
